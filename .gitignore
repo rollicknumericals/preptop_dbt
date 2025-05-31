@@ -1,0 +1,10 @@
+# dbt build artifacts
+target/
+dbt_packages/
+logs/
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+.DS_Store

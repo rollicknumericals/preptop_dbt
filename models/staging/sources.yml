@@ -1,0 +1,17 @@
+version 2:
+
+sources:
+  - name: preptop_raw
+    database: Preptop-dbt
+    schema: raw_olist
+    tables:
+      - name: customers_dataset
+      - name: order_payments_dataset
+      - name: orders_dataset
+      - name: geolocation_dataset
+      - name: order_items_dataset
+      - name: products_dataset
+      - name: sellers_dataset
+      - name: order_reviews_dataset
+      - name: product_category_name_translation
+      

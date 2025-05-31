@@ -1,0 +1,37 @@
+preptop_dbt:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 4
+      host: localhost
+      port: 5432
+      user: dbt-matt
+      pass: ravendisc
+      dbname: Preptop-dbt
+      schema: dbt_dev
+
+    raw:
+      type: postgres
+      threads: 4
+      host: localhost
+      port: 5432
+      user: dbt-matt
+      pass: ravendisc
+      dbname: Preptop-dbt
+      schema: raw_olist
+
+
+    prod:
+      type: postgres
+      threads: 4
+      host: localhost
+      port: 5432
+      user: dbt-matt
+      pass: ravendisc
+      dbname: Preptop-dbt
+      schema: customer_mart
+
+
+  target: dev
+
