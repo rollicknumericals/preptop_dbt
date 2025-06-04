@@ -11,6 +11,22 @@ models:
       - name: customer_id
         tests:
           - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+      - name: payment_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['credit_card', 'boleto', 'debit_card', 'voucher']
+
+
+
+
+
+
+
 
   - name: dim_customers
     description: Dimension table for customers
