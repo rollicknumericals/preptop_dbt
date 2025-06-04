@@ -12,3 +12,4 @@ payment_installments::INTEGER as payment_installments,
 payment_value::NUMERIC as payment_value
 
 from source
+where payment_type != 'not_defined' and payment_type is not null

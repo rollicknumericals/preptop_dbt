@@ -2,7 +2,7 @@ version 2:
 
 sources:
   - name: preptop_raw
-    database: Preptop-dbt
+    database: preptop-dbt
     schema: raw_olist
     tables:
       - name: customers_dataset
